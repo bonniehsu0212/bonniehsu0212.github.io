@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>大家好我叫鯊鯨魚</h1>
+    <button type="button">按我</button>
     <img src="http://5b0988e595225.cdn.sohucs.com/images/20190118/6df732ca89014b60acc27078a182d923.jpeg" alt="鯊鯨魚">
     <ul><a target="_blank" title="本鯊的兄弟姊妹" href="https://www.ikea.com.tw/zh/products/childrens-play/comfort-toys/blahaj-art-10373589">帶我回家</a></ul>
     <p>本鯊來自IKEA</p>
@@ -24,27 +25,8 @@
 <script>
   $(document).ready(function() {
     $("button").addClass("animated bounce");
+    $("button").on('click', function(){
+        console.log('歡迎');
   });
 </script>
 
-<div class="container-fluid">
-  <h3 class="text-primary text-center">jQuery Playground</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <h4>#left-well</h4>
-      <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#target1</button>
-        <button class="btn btn-default target" id="target2">#target2</button>
-        <button class="btn btn-default target" id="target3">#target3</button>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <h4>#right-well</h4>
-      <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4">#target4</button>
-        <button class="btn btn-default target" id="target5">#target5</button>
-        <button class="btn btn-default target" id="target6">#target6</button>
-      </div>
-    </div>
-  </div>
-</div>
